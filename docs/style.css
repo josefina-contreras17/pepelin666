@@ -372,9 +372,6 @@
         }
 
         /*Bloque Glosario del Perfil Sonoro*/
-        #glosario {
-            background-color: var(--color-fondo);
-        }
 
         .lista-glosario {
             margin: 2rem 0 0 0;
@@ -495,4 +492,19 @@
     .fila-contenido {
         flex-direction: column;
     }
+}
+
+/* === FONDOS SECCIONES BLOQUE 4 EN ADELANTE === */
+
+#cierre {
+    background-color: var(--color-texto);
+}
+
+#analisis {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+#analisis p, #analisis h2 {
+    color: var(--color-fondo);
 }
