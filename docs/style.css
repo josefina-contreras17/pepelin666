@@ -462,3 +462,37 @@
             h2 { font-size: 2rem; }
             .seccion { padding: 3rem 5%; }
         }
+
+ 
+/* === CARD BLOQUE 2 === */
+.bloque-card {
+    background-color:var(--color-fondo);
+    backdrop-filter: blur(6px);
+    border: 2px solid var(--color-acento2);
+    border-radius: 16px;
+    padding: 3rem 3.5rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* === LAYOUT FILA: texto + gráfico === */
+.fila-contenido {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.texto-lado {
+    flex: 1;
+}
+
+.grafico-lado {
+    flex: 2;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .fila-contenido {
+        flex-direction: column;
+    }
+}
