@@ -25,10 +25,10 @@
             color: var(--color-texto);
             font-family: var(--font-textos);
             line-height: 1.7;
-            margin: 0; padding: 0;
-            background-image: radial-gradient(var(--color-texto) 0.5px, transparent 0.5px);
-            background-size: 15px 15px;
-            background-blend-mode: overlay;
+            background-image: url('fondo.png');   
+            background-repeat: repeat;       
+            background-size: 400px 400px
+           
         }
 
         /* --- HEADER --- */
