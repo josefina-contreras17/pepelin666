@@ -584,9 +584,9 @@
 }
  
 #visualizacion-radar .texto-lado {
-    flex: 2;
+    flex: 2.5;
 }
  
 #visualizacion-radar .grafico-lado {
-    flex: 2.5;
+    flex: 2;
 }
