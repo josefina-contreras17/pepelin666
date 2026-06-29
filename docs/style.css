@@ -512,3 +512,63 @@
 .scroll-indicator {
     transition: opacity 0.5s ease;
 }
+
+/* Scroll indicator transición suave */
+.scroll-indicator {
+    transition: opacity 0.5s ease;
+}
+
+/* Header achicado al hacer scroll */
+.header-small {
+    padding: 0.4rem 5% !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4) !important;
+}
+
+.header-small .logo img {
+    height: 32px !important;
+}
+
+.site-header, .logo img {
+    transition: all 0.3s ease;
+}
+
+/* Barra de progreso */
+.barra-progreso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background-color: var(--color-acento1);
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+/* Glosario: ícono y hover */
+.icono-glosario {
+    color: var(--color-acento1);
+    font-size: 1.2rem;
+    float: right;
+}
+
+.termino-glosario dt:hover {
+    color: var(--color-acento1);
+    transition: color 0.2s ease;
+}
+
+.termino-glosario dd {
+    margin-top: 0.5rem;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Link activo en navegación */
+.nav-activo {
+    color: var(--color-acento1) !important;
+    border-bottom: 2px solid var(--color-acento1);
+    padding-bottom: 2px;
+}
