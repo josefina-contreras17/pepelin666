@@ -572,3 +572,21 @@
     border-bottom: 2px solid var(--color-acento1);
     padding-bottom: 2px;
 }
+
+/* === ADN SONORO: más ancho === */
+#visualizacion-radar .seccion-texto {
+    max-width: 1400px;
+}
+ 
+#visualizacion-radar .fila-contenido {
+    gap: 3.5rem;
+    align-items: flex-start;
+}
+ 
+#visualizacion-radar .texto-lado {
+    flex: 2;
+}
+ 
+#visualizacion-radar .grafico-lado {
+    flex: 2.5;
+}
