@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josefina Contreras">
+    <meta name="description" content="Crónica interactiva sobre la canción promedio del rock chileno en los 80s y 90s.">
+    <title>El ADN del Rock Chileno</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Monoton&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="site-header">
+       <a href="#hero" class="logo">
+            <img src="Logo_Webstory.png" alt="Logo ADN Rock Chileno">
+        </a>
+    <nav>
+            <ul class="nav-links">
+                <li><a href="#introduccion">La hipótesis</a></li>
+                <li><a href="#metodologia">La metodología</a></li>
+                <li><a href="#glosario">Glosario</a></li>
+                <li><a href="#visualizacion-radar">El ADN</a></li>
+                <li><a href="#contexto">La resistencia</a></li>
+                <li><a href="#evolucion">Top 10</a></li>
+                <li><a href="#analisis">El mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bloque 1 -->
+    <section id="hero" class="seccion">
+        <div class="seccion-texto">
+                <h1>El ADN del Rock Chileno</h1>
+                <p>Buscando la fórmula del éxito en las canciones del rock Chileno.</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Bloque 2: Hipótesis -->
+    <section id="introduccion" class="seccion">
+        <div class="seccion-texto">
+              <div class="bloque-card">
+            <h2>¿Puede la matemática explicar por qué una canción se vuelve himno?</h2>
+            <p>Al analizar las métricas acústicas de nuestro catálogo nacional, surge una revelación fascinante: nuestros grandes éxitos comparten atributos sonoros sorprendentemente similares. Lejos de ser un caos de experimentación aislada, existe un patrón.</p>
+            <p>Nuestra webstory explora cómo el rock latino chileno se convirtió en una forma de memoria colectiva durante y después de la dictadura. A través de una base de datos con más de 250 canciones, buscamos reconstruir la relación entre música e identidad.</p>
+            <section id="introduccion" class="seccion">
+            <div class="seccion-texto seccion-texto-ancha">
+                </div>
+                <img src="foto.jpg" alt="Portadas rock chileno" class="imagen-seccion"> 
+            </div>
+        </section>
+        </div>
+        </div>
+    </section>
+    
+    <!--Bloque 3: Metodología-->
+ <section id="metodologia" class="seccion">
+        <div class="seccion-texto seccion-texto-ancha">
+            <div class="bloque-card">
+            <h2>¿Cómo se construyó esta historia?</h2>
+            <div class="fila-contenido">
+                <div class="texto-lado">
+                    <p>Para responder esa pregunta, recurrimos a los datos. Extrajimos las métricas acústicas de más de 250 canciones del catálogo del rock chileno directamente desde la <strong>API de Spotify</strong>, que calcula variables como bailabilidad, energía, positividad y acústica para cada pista.</p>
+                    <p>Luego analizamos esos datos con la librería <strong>Vega-Altair en Python</strong> y construimos las visualizaciones con <strong>Flourish Studio</strong>. El resultado es un retrato sonoro de dos décadas de música chilena — no desde la crítica, sino desde los números.</p>
+                    <a href="mejorescancionesderock UTF.csv" class="btn-metodologia" download>↓ Descargar base de datos</a>
+                </div>
+                <div class="texto-lado">
+                    <ul class="lista-metodologia-visual">
+                        <li>
+                            <span class="metodo-num">232</span>
+                            <span class="metodo-label">canciones analizadas</span>
+                        </li>
+                        <li>
+                            <span class="metodo-num">4</span>
+                            <span class="metodo-label">variables acústicas</span>
+                        </li>
+                        <li>
+                            <span class="metodo-num">2</span>
+                            <span class="metodo-label">décadas de música</span>
+                        </li>
+                        <li>
+                            <span class="metodo-num">API</span>
+                            <span class="metodo-label">Spotify como fuente</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--Bloque 5: Glosario-->
+      <section id="glosario" class="seccion">
+        <div class="bloque-card">
+            <h2>Antes de seguir: ¿qué miden estos números?</h2>
+            <p>Spotify calcula variables acústicas para cada canción. Aquí una guía rápida para leer los gráficos que vienen.</p>
+            <dl class="lista-glosario">
+                <div class="termino-glosario">
+                    <dt>Danceability</dt>
+                    <dd>Es la métrica que nos dice qué tanto se presta una canción para que las caderas tomen el control. Si el número es alto, es un hit de discoteca; si es bajo, es una joya para escuchar con audífonos y mirada perdida en el horizonte.</dd>
+                </div>
+                <div class="termino-glosario">
+                    <dt>Acousticness</dt>
+                    <dd>El factor "desenchufado". Esta métrica detecta si la canción huele a madera, fogatas y cuerdas de nylon, o si está inyectada de sintetizadores, pedales y distorsión. A menor número, más electricidad corre por sus venas.</dd>
+                </div>
+                <div class="termino-glosario">
+                    <dt>Valence</dt>
+                    <dd>El termómetro del estado de ánimo. ¿La canción te hace querer sonreír bajo el sol o llorar bajo la lluvia? Una valencia alta es optimismo puro; una baja nos lleva directamente a los terrenos de la melancolía y la introspección.</dd>
+                </div>
+                <div class="termino-glosario">
+                    <dt>Energy</dt>
+                    <dd>La cafeína de la mezcla. Esta cifra mide la intensidad, la distorsión y la velocidad. Es lo que separa a una balada acústica de un himno que te hace saltar y romperte la voz en un concierto. Es el voltaje de la canción.</dd>
+                </div>
+                <div class="termino-glosario">
+                    <dt>Loudness</dt>
+                    <dd>El volumen promedio de la pista, medido en decibeles. Las canciones más "loud" suenan más presentes y compactas en la mezcla; las más bajas dejan más espacio para el silencio entre los instrumentos.</dd>
+                </div>
+            </dl>
+            <h4>¿Qué significa que una banda tenga alta energía y alta bailabilidad al mismo tiempo?</h4>
+            <p>Esta es una combinación muy específica que dice mucho sobre cómo una banda construye sus canciones:</p>
+            <p>Alta energía significa que la canción es <strong>intensa, densa, con mucha distorsión, tempo rápido y volumen sostenido</strong>. Es lo que sientes en el pecho en un concierto.</p>
+            <p>Alta bailabilidad significa que tiene un <strong>pulso rítmico estable y predecible </strong> — el oyente puede seguir el beat fácilmente, hay un groove claro.</p>
+            <p>Cuando una banda logra ambas al mismo tiempo, significa que encontró un <strong>punto de equilibrio muy particular</strong>: canciones que te mueven el cuerpo pero también te golpean emocionalmente.</p>
+        </div>
+    </section>
+
+     <!-- Bloque 4: La Visualización -->
+     <section id="visualizacion-radar" class="seccion">
+        <div class="seccion-texto">
+            <h3>Cada banda tiene su huella — y los datos lo prueban</h3>
+            <div class="fila-contenido">
+                <div class="texto-lado">
+                    <p>Los datos revelan patrones que van más allá de lo que las letras sugieren. <strong>Los Prisioneros</strong> lideran en bailabilidad (0.70) y positividad (0.71) — una paradoja fascinante: sus canciones de rabia social son, acústicamente, las más alegres del catálogo. Es la fórmula del himno perfecto: <em>mensaje urgente envuelto en un ritmo que no puedes ignorar</em>.</p>
+                    <p><strong>La Ley</strong> domina en popularidad (65 puntos) con una bailabilidad alta (0.63) y casi nada de acústica (0.09) — el sonido más electrónico y pulido del grupo. En el extremo opuesto, <strong>Los Jaivas</strong> tienen la acústica más alta (0.39) y la popularidad más baja (9.8), lo que confirma que su sonido folclórico, aunque icónico, no encontró el mismo alcance en Spotify.</p>
+                    <p><strong>Los Bunkers</strong> y <strong>Chancho En Piedra</strong> comparten la energía más alta del catálogo (0.83), pero se separan en positividad: Chancho En Piedra alcanza un 0.88 de valence — el más alto de todos.</p>
+                    <p class="leyenda-grafico">Interacciona con el gráfico de araña para comparar los niveles de Energía, Bailabilidad, Positividad y Acústica.</p>
+                </div>
+                <div class="grafico-lado">
+                    <div class="flourish-embed flourish-radar" data-src="visualisation/29488203">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                        <noscript><img src="https://public.flourish.studio/visualisation/29488203/thumbnail" width="100%" alt="radar visualization" /></noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 5: Contexto Visual -->
+    <section id="contexto" class="seccion">
+        <div class="seccion-texto">
+            <div class="bloque-card-turquesa">
+            <h2>El sonido que nació de la resistencia</h2>
+            <p>La Nueva Ola sentó las bases de la melodía radiable, pero fueron bandas como <strong>Los Prisioneros, Upa! y Electrodomésticos</strong> quienes tomaron esa estructura, la electrificaron y la dotaron de una urgencia social ineludible.</p>
+        </div>
+                <div class="contenedor-video">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube-nocookie.com/embed/WRcCBI5rFfM?si=TPwVjloq17x3JFhY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </section>
+
+ <!-- Bloque Cierre Narrativo -->
+    <section id="cierre" class="seccion">
+        <div class="seccion-texto">
+            <h2>Un ADN musical que sigue marcando el pulso del país.</h2>
+        </div>
+    </section>
+
+    <!--Bloque 6: Atributos Hit top 10 -->
+  <section id="evolucion" class="seccion">
+        <div class="seccion-texto">
+            <div class="bloque-card">
+                <h2>¿Qué tienen en común los 10 hits que resistieron el tiempo?</h2>
+                <p>Al aislar las canciones más populares del catálogo — aquellas que han resistido la prueba del tiempo en Spotify — podemos observar la arquitectura de un éxito rotundo. "Tren Al Sur" (74 puntos), "Mentira" (72) y "Bailando Solo" (71) comparten el mismo cuadrante: alta energía, alta bailabilidad, y una positividad que supera el 0.7.</p>
+                <p>Hay una excepción reveladora: <strong>"Tu Falta De Querer" de Mon Laferte</strong> lidera con 84 puntos de popularidad pese a tener bailabilidad baja (0.39) y energía moderada (0.47). La emoción pura también puede ser un himno.</p>
+            <div class="contenedor-grafico" style="border: none; background: transparent; height: auto;">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/29489887">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript><img src="https://public.flourish.studio/visualisation/29489887/thumbnail" width="100%" alt="chart visualization" /></noscript>
+                </div>
+            </div>
+            </div>
+            <p class="leyenda-grafico">Interacciona con el gráfico para comparar los diferentes atributos acústicos de las 10 canciones más exitosas.</p>
+        </div>
+    </section>
+
+    <!--Bloque Análisis de Resultados y Gráfico de Dispersión -->
+      <section id="analisis" class="seccion">
+        <div class="seccion-texto">
+            <h2>¿Dónde se centran los himnos?</h2>
+            <p>Las canciones con alta energía y alta bailabilidad (ambas sobre 0.6) representan solo el <strong>20% del catálogo</strong> — 47 de 232 canciones — pero concentran una popularidad promedio de 29.9 puntos, casi el doble que el resto (17.6). El cuadrante superior derecho es donde viven los himnos.</p>
+            <div class="contenedor-grafico" style="border: none; background: transparent; height: auto;">
+                <div class="flourish-embed flourish-scatter" data-src="visualisation/29488808">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    <noscript><img src="https://public.flourish.studio/visualisation/29488808/thumbnail" width="100%" alt="scatter visualization" /></noscript>
+                </div>
+            </div>
+            <p>Las canciones con alta energía y alta bailabilidad (ambas sobre 0.6) representan solo el <strong>20% del catálogo</strong> (47 de 232 canciones) pero concentran una popularidad promedio de 29.9 puntos, casi el doble que el resto del catálogo (17.6).</p>
+            <p class="leyenda-grafico">Las canciones más icónicas del catálogo nacional tienden a agruparse en la zona de alta energía y alta bailabilidad.</p>
+        </div>
+    </section>
+
+
+    <!-- Bloque 7: Cierre -->
+    <section id="cierre" class="seccion">
+        <div class="seccion-texto">
+            <h2>La fórmula existe — pero tiene una excepción.</h2>
+            <p>Los datos lo confirman: alta energía más alta bailabilidad es la coordenada exacta donde se ubican la mayoría de los himnos del rock chileno. No es casualidad — es una decisión sonora que permitió que mensajes urgentes llegaran a más oídos, más veces, en más lugares.</p>
+            <p>Pero la excepción también dice algo: Mon Laferte, con una canción lenta y melancólica, lidera el ranking. La fórmula no es una jaula — es un punto de partida. El ADN del rock chileno tiene un patrón claro, pero también sabe cuándo romperlo.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="seccion-texto">
+            <h3>Créditos</h3>
+            <p>Por Josefina Contreras · 2026</p>
+            <p>Narración Gráfica de No Ficción</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
