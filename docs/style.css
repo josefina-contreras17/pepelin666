@@ -665,3 +665,17 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/* === SPOTIFY EMBEDS EN GLOSARIO === */
+.spotify-ejemplo {
+    margin-top: 1rem;
+}
+
+.spotify-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-acento1);
+    margin-bottom: 0.5rem;
+}
